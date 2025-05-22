@@ -2,7 +2,7 @@
 
 class Aluno {
     
-    //Atributos
+    //Atributos - Sempre serão privados
     private $nome;
     private $matricula;
     private $curso;
@@ -14,7 +14,7 @@ class Aluno {
         $this->curso = $c;
     }
 
-    //Métodos
+    //Métodos - Podem ser públicos ou privados
     public function estudar(){
         echo "Aluno estudando" . "\n";
     }
@@ -23,7 +23,7 @@ class Aluno {
         echo "Aluno indo ao banheiro";
     }
 
-    //GETs e SETs
+    //GETs e SETs - SET seta um valor para um atributo, e GET retorna (pega) esse valor
     /*public function getNome(){
         return $this->nome
     }
